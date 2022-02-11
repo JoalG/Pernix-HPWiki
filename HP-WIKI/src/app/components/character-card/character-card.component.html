@@ -1,8 +1,9 @@
-<div class="card animated zoom">
-    <img [src]="character.image" [alt]="character.name + ' image.'" onerror="this.src='assets/uknown-character.jpg'" class="card-img-top rounded-circle">
-    <img src="" alt="">
-    <div class="card-body">
-      <h5 class="card-title text-center">{{character.name}}</h5>
+
+<div class="card zoom h-100" >
+    <img [src]="character.image" [alt]="character.name + ' image.'" onerror="this.src='assets/images/uknown-character.jpg'" class="card-img-top rounded-circle">
+    <div class="card-body text-center">
+        <h4>{{character.name}}</h4>
+        <a href="#" class="stretched-link"></a>
     </div>
 </div>
   
