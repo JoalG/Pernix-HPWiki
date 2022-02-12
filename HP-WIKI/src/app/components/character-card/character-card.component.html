@@ -1,8 +1,14 @@
 
-<div class="card zoom h-100" >
-    <img [src]="character.image" [alt]="character.name + ' image.'" onerror="this.src='assets/images/uknown-character.jpg'" class="card-img-top rounded-circle">
+<div class="card text-white bg-dark zoom h-100" >
+    <img 
+        [src]="character.image" 
+        [alt]="character.name + ' image.'" 
+        onerror="this.src='assets/images/uknown-character.jpg'" 
+        class="card-img-top"
+    >
+    <h3 class="card-icon"><i class="fa-solid fa-eye"></i></h3>
     <div class="card-body text-center">
-        <h4>{{character.name}}</h4>
+        <h5>{{character.name}}</h5>
         <a href="#" class="stretched-link"></a>
     </div>
 </div>
