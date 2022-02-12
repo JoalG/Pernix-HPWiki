@@ -7,12 +7,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from "@angular/common/http";
 import { CharacterCardComponent } from './components/character-card/character-card.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CharacterCardComponent
+    CharacterCardComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
