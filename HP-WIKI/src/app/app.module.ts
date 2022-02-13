@@ -9,6 +9,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { CharacterCardComponent } from './components/character-card/character-card.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { CharacterInfoComponent } from './components/character-info/character-info.component';
+import {NgxPaginationModule} from 'ngx-pagination';
+import { PaginationControlsComponent } from './components/pagination-controls/pagination-controls.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,15 @@ import { CharacterInfoComponent } from './components/character-info/character-in
     HomeComponent,
     CharacterCardComponent,
     NavbarComponent,
-    CharacterInfoComponent
+    CharacterInfoComponent,
+    PaginationControlsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
