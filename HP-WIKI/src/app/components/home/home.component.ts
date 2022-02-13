@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   constructor(private api:CharactersService){}
 
   ngOnInit(): void {
-    this.api.apiCall().subscribe((data)=>{
+    this.api.getCharacters().subscribe((data)=>{
       this.characters = <any[]>data;
     });
   }
