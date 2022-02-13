@@ -13,8 +13,8 @@ export class CharactersService {
     private http:HttpClient
   ) { }
 
-  apiCall(){
-    return this.http.get(this.API_URL)
+  getCharacters(){
+    return this.http.get(this.API_URL);
   }
 
 }
