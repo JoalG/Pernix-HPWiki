@@ -8,13 +8,15 @@ import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from "@angular/common/http";
 import { CharacterCardComponent } from './components/character-card/character-card.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { CharacterInfoComponent } from './components/character-info/character-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CharacterCardComponent,
-    NavbarComponent
+    NavbarComponent,
+    CharacterInfoComponent
   ],
   imports: [
     BrowserModule,
