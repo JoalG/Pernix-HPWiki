@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-character-card',
@@ -8,10 +9,17 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CharacterCardComponent implements OnInit {
 
   @Input() character!: any;
+  @Input() id!: number;
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  goToCharacterInfo(id:number){
+    this.router.navigate(['/character-info', id]);
   }
 
 }

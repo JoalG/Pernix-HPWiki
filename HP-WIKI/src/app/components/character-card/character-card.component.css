@@ -38,3 +38,7 @@
 .card:hover .card-icon{
     opacity: 100%;
 }
+
+.pointer {
+    cursor: pointer;
+}
