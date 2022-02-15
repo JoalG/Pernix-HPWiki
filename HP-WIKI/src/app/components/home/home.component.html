@@ -1,6 +1,6 @@
 <body>
   <div class="container-fluid">
-    <div class="row d-flex justify-content-end my-3 mr-1">
+    <div class="row d-flex justify-content-end my-3 mx-1">
       <app-pagination-controls [page_number]="page_number" (change)="page_number=$event "></app-pagination-controls>
     </div>
     <div id="characters-row" class="row card-group">
@@ -8,7 +8,7 @@
         <app-character-card [id]="calcCardId(i)" [character]=character>a</app-character-card>
       </div>
     </div>
-    <div class="row d-flex justify-content-end my-3 mr-1">
+    <div class="row d-flex justify-content-end my-3 mx-1">
       <app-pagination-controls [page_number]="page_number" (click)="scroll('characters-row')" (change)="page_number=$event "></app-pagination-controls>
     </div>
   </div> 

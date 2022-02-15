@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CharactersService {
 
-  API_URL = 'http://hp-api.herokuapp.com/api/characters';
+  API_URL = 'https://hp-api.herokuapp.com/api/characters';
 
   constructor(
     private http:HttpClient
