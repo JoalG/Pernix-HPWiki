@@ -1,0 +1,14 @@
+
+<div class="card text-white bg-dark zoom h-100 pointer" (click)="goToCharacterInfo(id)" >
+    <img 
+        [src]="character.image" 
+        [alt]="character.name + ' image.'" 
+        onerror="this.src='assets/images/uknown-character.jpg'" 
+        class="card-img-top"
+    >
+    <h3 class="card-icon"><i class="fa-solid fa-eye"></i></h3>
+    <div class="card-body text-center">
+        <h5>{{character.name}}</h5>
+    </div>
+</div>
+  

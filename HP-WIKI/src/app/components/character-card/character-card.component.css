@@ -1,0 +1,45 @@
+.card-img-top {
+    
+    margin: auto;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5%;    
+}
+
+.card:hover {
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+    filter: brightness(80%);
+}
+
+.card{
+    border-radius: 5%;
+    max-width: 275px;
+    margin: auto;
+}
+
+.zoom {
+    transition: transform .2s; /* Animation */
+}
+  
+.zoom:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.card-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0%;
+}
+
+.card:hover .card-icon{
+    opacity: 100%;
+}
+
+.pointer {
+    cursor: pointer;
+}

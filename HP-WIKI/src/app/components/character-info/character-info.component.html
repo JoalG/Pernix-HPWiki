@@ -1,0 +1,112 @@
+<body>
+    <div class="container-fluid">
+
+        <div class="card text-white bg-dark text-center mt-3" >
+            <div class="card-header">
+                <h5>Biographical information</h5>
+            </div>
+            
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 col-lg-4 border-right my-2" >
+                        <div class="px-5 mx-5">
+                            <img 
+                            [src]="character.image" 
+                            [alt]="character.name + ' image.'" 
+                            onerror="this.src='assets/images/uknown-character.jpg'" 
+                            class="character-img"
+                            >
+                        </div>
+                        <h2 class="mt-3">{{character.name}}</h2>
+                    </div>
+                    <div class="col my-2" >
+                        <div class="row text-left px-5">
+                            <div class="col-12 col-xl-6 my-1">
+                                <h5>
+                                    <i class="fa-solid fa-cake-candles"></i> 
+                                    Date of Birth: {{character.dateOfBirth}}
+                                </h5>
+                            </div>
+                            <div class="col-12 col-xl-6 my-1">
+                                <h5>
+                                    <i class="fa-brands fa-xing-square"></i> 
+                                    Species: {{character.species | titlecase}}
+                                </h5>
+                            </div>
+                            <div class="col-12 col-xl-6 my-1">
+                                <h5>
+                                    <i class="fa-solid fa-mars-and-venus"></i> 
+                                    Gender: {{character.gender | titlecase}}
+                                </h5>
+                            </div>
+                            <div class="col-12 col-xl-6 my-1">
+                                <h5>
+                                    <i class="fa-solid fa-heart"></i> 
+                                    Alive: {{character.alive?'Yes':'No'}}
+                                </h5>
+                            </div>
+                            <div class="col-12 col-xl-6 my-1">
+                                <h5>
+                                    <i class="fa-solid fa-users"></i> 
+                                    Ancestry: {{character.ancestry | titlecase}}
+                                </h5>
+                            </div>
+                            <div class="col-12 col-xl-6 my-1">
+                                <h5>
+                                    <i class="fa-solid fa-hat-wizard"></i> 
+                                    Wizard: {{character.wizard?'Yes':'No'}}
+                                </h5>
+                            </div>
+                            <div class="col-12 col-xl-6 my-1">
+                                <h5>
+                                    <i class="fa-solid fa-paw"></i> 
+                                    Patronus: {{character.patronus | titlecase}}
+                                </h5>
+                            </div>
+                            <div class="col-12 col-xl-6 my-1">
+                                <h5>
+                                    <i class="fa-solid fa-house"></i> 
+                                    House: {{character.house | titlecase}}
+                                </h5>
+                            </div>
+                            <div class="col-12 col-xl-6 my-1">
+                                <h5>
+                                    <i class="fa-solid fa-eye"></i> 
+                                    Eyes colour: {{character.eyeColour | titlecase}}
+                                </h5>
+                            </div>
+                            <div class="col-12 col-xl-6 my-1">
+                                <h5>
+                                    <i class="fa-solid fa-ethernet"></i> 
+                                    Hair colour: {{character.hairColour | titlecase}}
+                                </h5>
+                            </div>
+                            <div class="col-12 col-xl-6 my-1">
+                                <h5>
+                                    <i class="fa-solid fa-clapperboard"></i> 
+                                    Actor: {{character.actor | titlecase}}
+                                </h5>
+                            </div>
+                            <div class="col-12 col-xl-6 my-1">
+                                <h5>
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i> 
+                                    Wand
+                                </h5>
+                                <div class="pl-2">
+                                    <h6>Wood: {{character.wand.wood | titlecase}}</h6>
+                                    <h6>Core: {{character.wand.core | titlecase}}</h6>
+                                    <h6>Length: {{character.wand.length | titlecase}}</h6>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                <h5><i class="fa-solid fa-broom-ball"></i></h5>
+            </div>
+            <img class="float-img d-none d-md-inline" src="assets/images/HarryPotter.png" alt="Harry Pooter cartoon">
+        </div>
+    </div>       
+</body>
