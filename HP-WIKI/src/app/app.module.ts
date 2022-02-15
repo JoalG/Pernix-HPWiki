@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { CharacterInfoComponent } from './components/character-info/character-info.component';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { PaginationControlsComponent } from './components/pagination-controls/pagination-controls.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PaginationControlsComponent } from './components/pagination-controls/pa
     CharacterCardComponent,
     NavbarComponent,
     CharacterInfoComponent,
-    PaginationControlsComponent
+    PaginationControlsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
